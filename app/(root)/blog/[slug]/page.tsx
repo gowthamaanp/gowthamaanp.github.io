@@ -5,9 +5,9 @@ import Layout from "@/components/Layout";
 import { BlogHeading } from "@/components/common/BlogHeading";
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 export default async function Blog({ params }: Props) {
