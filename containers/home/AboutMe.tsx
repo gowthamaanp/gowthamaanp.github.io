@@ -20,12 +20,12 @@ const AboutMe = () => (
           the right place.
         </p>
         <Image
-          src="/assets/png/display-picture.png"
+          src="/assets/jpg/image_dp.jpg"
           alt="display-picture"
-          width="100"
-          height="100"
+          width={200}
+          height={200}
           priority
-          className="object-cover rounded-full min-w-52"
+          className="rounded-full aspect-square object-cover"
         />
       </div>
 

@@ -26,6 +26,12 @@ export const menuItems: IMenuItems[] = [
     color: "#b2b2b2",
   },
   {
+    href: "/publications",
+    src: "/assets/svg/projects.svg",
+    name: "Publications",
+    color: "#b2b2b2",
+  },
+  {
     onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
     src: "/assets/svg/scrolltop.svg",
     name: "Scroll to top",
