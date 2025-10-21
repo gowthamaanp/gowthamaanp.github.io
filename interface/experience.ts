@@ -1,9 +1,10 @@
 export interface IExperience {
-    companyName: string;
-    duration: string;
-    tags: string[];
-    tagBgColors: string[];
-    title: string;
-    location: string;
-    desc: string[];
-  }
+  title: string;
+  company: string;
+  period: string;
+  location: string;
+  description: string[];
+  logo?: string;
+  link: string;
+  tags?: string[];
+}

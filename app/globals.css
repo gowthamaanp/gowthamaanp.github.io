@@ -2,6 +2,125 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'highlight.js/styles/github.min.css';
+
+@font-face {
+  font-family: 'Tahoma';
+  src: url('/fonts/tahoma.ttf') format('truetype');
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+body {
+  font-family: 'Tahoma', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
 .semi-bold {
   font-weight: 500;
+}
+
+/* Highlight.js theme overrides for dark mode */
+.dark .hljs {
+  background: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.dark .hljs-keyword,
+.dark .hljs-selector-tag,
+.dark .hljs-literal,
+.dark .hljs-section,
+.dark .hljs-link {
+  color: #569cd6;
+}
+
+.dark .hljs-string {
+  color: #ce9178;
+}
+
+.dark .hljs-comment {
+  color: #6a9955;
+}
+
+/* Project card animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-from-top {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+.fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+.slide-in-from-top-2 {
+  animation: slide-in-from-top 0.3s ease-out;
+}
+
+/* Smooth image transitions */
+.project-image-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover effects for project cards */
+.project-card-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.project-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery thumbnail effects */
+.gallery-thumbnail {
+  transition: all 0.2s ease-in-out;
+}
+
+.gallery-thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Status badge pulse animation */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.status-badge-pulse {
+  animation: pulse-subtle 2s ease-in-out infinite;
 }

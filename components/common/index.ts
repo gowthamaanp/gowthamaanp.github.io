@@ -7,3 +7,4 @@ export * from "./ListWrapper";
 export * from "./LinkWrapper";
 export * from "./Tag";
 export * from "./DivWBorderWrapper";
+export * from "./SubSectionHeading";

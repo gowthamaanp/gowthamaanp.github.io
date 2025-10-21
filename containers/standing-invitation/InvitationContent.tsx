@@ -21,10 +21,7 @@ const InvitationContent = () => (
     </div>
 
     <div>
-      <SubSectionHeading
-        heading="Email I Enjoy Receiving"
-        fontColor="#0a0a0a"
-      />
+      <SubSectionHeading heading="Email I Enjoy Receiving" />
       <ListWrapper
         liProps={{
           className: "!text-base leading-relaxed",
@@ -37,7 +34,7 @@ const InvitationContent = () => (
     </div>
 
     <div>
-      <SubSectionHeading heading="Important!" fontColor="#0a0a0a" />
+      <SubSectionHeading heading="Important!!!" />
       <p>
         If I don’t respond, I apologize in advance; it was me, not you. If I
         don’t respond within a week, feel free to send a follow-up email. I’ll
@@ -45,12 +42,8 @@ const InvitationContent = () => (
       </p>
     </div>
     <div>
-      <SubSectionHeading
-        heading="Don't Know How to Start?"
-        fontColor="#0a0a0a"
-      />
       <p className="mb-4">Here's your opening line…</p>
-      <pre className="whitespace-pre-wrap p-4 rounded-lg font-light text-white bg-[#34455d]">
+      <pre className="whitespace-pre-wrap p-4 rounded-lg font-light text-white dark:text-gray-200 bg-gray-800 dark:bg-gray-900">
         {`Hi,
 I'm sending you this email because of the standing invitation page on your website.
 I need help with/I want your thoughts on/I'd like to share...

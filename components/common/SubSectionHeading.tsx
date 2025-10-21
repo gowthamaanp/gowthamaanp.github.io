@@ -1,17 +1,9 @@
 export const SubSectionHeading: React.FC<{
   heading?: string;
-  fontColor: string;
-}> = ({ heading, fontColor }) => {
+}> = ({ heading }) => {
   return (
     heading && (
-      <p
-        className="text-lg font-medium font-poppins mt-6 mb-3"
-        style={{
-          color: fontColor,
-        }}
-      >
-        {heading}
-      </p>
+      <p className="text-lg font-medium font-poppins mt-6 mb-3">{heading}</p>
     )
   );
 };

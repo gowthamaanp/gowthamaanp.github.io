@@ -1,4 +1,3 @@
-import "highlight.js/styles/github-dark.min.css";
 import { notFound } from "next/navigation";
 import { getBlogContentBySlug } from "@/utils/mdxUtils";
 import Layout from "@/components/Layout";
@@ -29,8 +28,8 @@ export default async function Blog({ params }: Props) {
         integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
         crossOrigin="anonymous"
       />
-      <BlogHeading heading={title} fontColor="0a0a0a" date={date} read={read} />
-      <article className="prose prose-base max-w-none text-black">
+      <BlogHeading heading={title} date={date} read={read} />
+      <article className="prose prose-base dark:prose-invert max-w-none text-foreground dark:text-foreground">
         {content}
       </article>
     </Layout>

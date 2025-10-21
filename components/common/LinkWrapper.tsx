@@ -35,15 +35,15 @@ export const LinkWrapper: React.FC<LinkWrapperProps> = ({
       )}
       role="link"
     >
-      {children && <p>{children}</p>}
+      {children && <span>{children}</span>}
       {linkIcon && (
-        <div className="group-hover:animate-shake">
+        <div className="group-hover:animate-shake transition-opacity hover:opacity-80">
           <Image
             src={linkIcon}
             alt="link"
             width={30}
             height={30}
-            className="inline-block h-full"
+            className="inline-block h-full dark:invert dark:brightness-0 dark:contrast-100"
           />
         </div>
       )}

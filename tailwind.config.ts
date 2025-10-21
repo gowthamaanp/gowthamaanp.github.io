@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  darkMode: 'class',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,8 +15,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        "poppins": 'var(--font-poppins)',
-        "outfit": 'var(--font-outfit)', 
+        sans: ['Tahoma', 'sans-serif'],
       },
       animation: {
         shake: 'shake 0.5s ease-in-out',

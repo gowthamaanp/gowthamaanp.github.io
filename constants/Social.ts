@@ -9,7 +9,7 @@ export const socials: ISocial[] = [
   {
     label: "github",
     icon: "/assets/svg/github.svg",
-    href: "https://github.com/gowthamaanpalani",
+    href: "https://github.com/gowthamaanp",
   },
   {
     label: "linkedin",
@@ -19,6 +19,6 @@ export const socials: ISocial[] = [
   {
     label: "x",
     icon: "/assets/svg/x.svg",
-    href: "https://www.linkedin.com/in/gowthamaan",
+    href: "https://www.linkedin.com/in/gowthamaanp",
   },
 ];

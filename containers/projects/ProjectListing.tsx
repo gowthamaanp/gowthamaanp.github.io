@@ -8,7 +8,11 @@ const ProjectsListing = () => {
     <SectionWrapper>
       <div className="space-y-8">
         {projectsData.map((project, index) => (
-          <ProjectListingItem project={project} key={index} />
+          <ProjectListingItem
+            project={project}
+            key={index}
+            isLastItem={index === projectsData.length - 1}
+          />
         ))}
       </div>
     </SectionWrapper>

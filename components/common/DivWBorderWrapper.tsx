@@ -5,7 +5,12 @@ export const DivWBorderWrapper: React.FC<{
   className?: string;
 }> = ({ children, className }) => {
   return (
-    <div className={clsx("border-b-2 border-black pb-8 px-4", className)}>
+    <div
+      className={clsx(
+        "border-b-2 border-gray-300 dark:border-gray-700 pb-8 px-4",
+        className
+      )}
+    >
       {children}
     </div>
   );
